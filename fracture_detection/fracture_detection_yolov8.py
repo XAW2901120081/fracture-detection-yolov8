@@ -90,7 +90,7 @@ def main():
             progress = st.progress(0)
             progress_text = st.empty()  # 用于显示百分比
 
-            model = YOLO("C:\\Users\\18301\\OneDrive\\Desktop\\FractureDetection1.2\\fracture_detection\\yolov8m_10.16.pt")  # Load model here
+            model = YOLO('fracture_detection/yolov8m_10.16.pt')  # Load model here
 
             # 使用线程池并行处理每张图片
             images_to_display = []
