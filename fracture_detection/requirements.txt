@@ -8,4 +8,5 @@ scipy
 Pillow
 tqdm
 pyyaml
-ultralytics  
+ultralytics
+ 
