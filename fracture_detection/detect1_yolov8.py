@@ -15,7 +15,7 @@ def resize_and_letterbox(image, target_size=(640, 640), color=(114, 114, 114)):
     img = cv2.copyMakeBorder(img, dh // 2, dh - dh // 2, dw // 2, dw - dw // 2, cv2.BORDER_CONSTANT, value=color)  # Add padding
     return img
 
-def detect(image_path, model_path="C:\\Users\\18301\\OneDrive\\Desktop\\FractureDetection1.2\\fracture_detection\\yolov8m_10.16.pt", conf_threshold=0.5):
+def detect(image_path, model_path=r"fracture_detection\yolov8m_10.16.pt", conf_threshold=0.5):
     """Load the model and perform detection on the given image."""
     model = YOLO(model_path)
 
